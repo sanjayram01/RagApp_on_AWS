@@ -30,5 +30,5 @@ __all__ = [
     "TxtReader",
     "PDFThumbnailReader",
     "WebReader",
-    "GOCR2ImageReader"
+    "GOCR2ImageReader",
 ]
