@@ -284,7 +284,7 @@ SETTINGS_REASONING = {
     },
 }
 
-USE_NANO_GRAPHRAG = config("USE_NANO_GRAPHRAG", default=False, cast=bool)
+USE_NANO_GRAPHRAG = config("USE_NANO_GRAPHRAG", default=True, cast=bool)
 GRAPHRAG_INDEX_TYPE = (
     "ktem.index.file.graph.GraphRAGIndex"
     if not USE_NANO_GRAPHRAG

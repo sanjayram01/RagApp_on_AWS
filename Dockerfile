@@ -44,9 +44,9 @@ RUN --mount=type=ssh  \
     && pip install -e "libs/ktem" \
     && pip install "pdfservices-sdk@git+https://github.com/niallcm/pdfservices-python-sdk.git@bump-and-unfreeze-requirements"
 
-RUN --mount=type=ssh  \
-    --mount=type=cache,target=/root/.cache/pip  \
-    if [ "$TARGETARCH" = "amd64" ]; then pip install graphrag future; fi
+# RUN --mount=type=ssh  \
+#     --mount=type=cache,target=/root/.cache/pip  \
+#     if [ "$TARGETARCH" = "amd64" ]; then pip install graphrag future; fi
 
 # Clean up
 RUN apt-get autoremove \
